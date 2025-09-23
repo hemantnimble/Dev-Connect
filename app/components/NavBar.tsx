@@ -39,8 +39,8 @@ function NavBar() {
             logo={logo}
             logoAlt="Company Logo"
             items={items}
-            baseColor="#e4e4e4"
-            menuColor="#000"
+            // baseColor="#e4e4e4"
+            menuColor="#fff"
             buttonBgColor="#111"
             buttonTextColor="#fff"
             ease="power3.out"
