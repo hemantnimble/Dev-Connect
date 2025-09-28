@@ -1,10 +1,16 @@
-import NavBar from "./components/NavBar";
-import HeroSec from "./components/HeroSec";
+// import NavBar from "./components/NavBar";
+
+import AddUserPage from "./components/Test";
+
+// import HeroSec from "./components/HeroSec";
 export default function Home() {
   return (
    <>
-   <NavBar/>
-   <HeroSec></HeroSec>
+   <h1>PhyGital.!</h1>
+   <AddUserPage/>
+   {/* <NavBar/> */}
+   {/* <HeroSec></HeroSec> */}
+
    </>
   );
 }
