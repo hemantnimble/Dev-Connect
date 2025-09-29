@@ -1,15 +1,10 @@
-import NavBar from "./components/NavBar";
-// import AddUserPage from "./components/Test";
+import React from 'react'
+import HomePage from './components/HomePage'
 
-// import HeroSec from "./components/HeroSec";
-export default function Home() {
+export default function page() {
   return (
-   <>
-   <h1>PhyGital.!</h1>
-   {/* <AddUserPage/> */}
-   <NavBar/>
-   {/* <HeroSec></HeroSec> */}
-
-   </>
-  );
+    <>
+    <HomePage/>
+    </>
+  )
 }
