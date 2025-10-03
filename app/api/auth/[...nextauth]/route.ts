@@ -1,2 +1,7 @@
-import { handlers } from "@/auth" // Referring to the auth.ts we just created
+export const dynamic = 'force-dynamic';
+
+import { handlers } from "@/auth"
+
+// GET and POST handlers from NextAuth
 export const { GET, POST } = handlers
+

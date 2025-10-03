@@ -3,14 +3,15 @@
 import { signIn, signOut } from "@/auth";
 import { revalidatePath } from "next/cache";
 
+export const signInAction = async (provider: string) => {
+    await signIn(provider, { redirectTo: "/" });
+    revalidatePath("/");
+};
+
 export const signOutAction = async () => {
-  await signOut({ redirectTo: "/" });
-  revalidatePath("/");
-
+    await signOut({ redirectTo: "/" });
+    revalidatePath("/");
 };
 
 
-export const signInAction = async () => {
-  "use server";
-  await signIn("google");
-};
+
