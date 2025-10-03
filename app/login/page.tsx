@@ -4,7 +4,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link"
 import { redirect } from "next/navigation";
 
-export default  function SignIn() {
+export default function SignIn() {
   const session = useSession();
   if (session.data) {
     return redirect("/")
@@ -14,11 +14,7 @@ export default  function SignIn() {
       <Link href='/'>
         <button>-back</button>
       </Link>
-      <form
-        action={signInAction}
-      >
-        <button type="submit">Signin with Google</button>
-      </form>
+      <button onClick={() => signInAction('google')} >Signin with Google</button>
     </>
   )
 } 
